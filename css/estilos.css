@@ -1,0 +1,872 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 5em;
+    line-height: 5em;
+}
+body{
+    text-align: center;
+    background-color: #eeeeee;
+}
+header #logo{
+    display: inline-block;
+    width: 6.5em;
+    padding-top: 1em;
+}
+img{
+    max-width: 100%;
+}
+.heroe{
+    max-width: 567px;
+}
+#hamburguesa li:last-child{
+    display: none;
+}
+#barra{
+    left: -100vw;
+}
+#menu:target #hamburguesa li:first-child{
+    display: none;
+}
+#menu:target #hamburguesa li:last-child{
+    display: block;
+}
+#menu:target #barra{
+    height: 66vh;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#hamburguesa li{
+    width: 3em;
+    margin-left: 1em;
+    list-style: none;
+}
+#hamburguesa li a{
+    display: block;
+    height: 2.5em;
+    text-indent: -500px;
+    overflow: hidden;
+    background: url(../imagenes/menu.png) no-repeat center center;
+    background-size: cover;
+    margin-top: 1.25em;
+    font-family: 'gobold regular', sans-serif;
+}
+#barra{
+    position: absolute;
+    top: 4em;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    transition: all 500ms;
+    height: 0;
+    overflow: hidden;
+}
+#barra li{
+    font-size: 1.5em;
+    font-family: 'gobold','Lucida Sans';
+    background-color: black;
+    border: 1px solid white;
+}
+#barra #botoncito{
+    background-color: #ceff29;
+}
+#barra li a{
+    text-decoration: none;
+    color: white;
+}
+#barra #botoncito a{
+    color: black;
+}
+h1{
+    font-family: 'gobold CUTS','Lucida Sans';
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color:black;
+    width:60%;
+    min-width: 250px;
+    padding: 0.1em;
+    display: inline-block;
+    margin-top: -40vh;
+    margin-bottom: 10vh;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+}
+.bloque1{
+    max-width: 567px;
+}
+h2{
+    font-family: 'Gobold';
+    font-size: 2em;
+    margin-bottom: 1.3em;
+    margin-top: 0.9em;
+    color: rgb(77, 77, 77)
+}
+h3{
+    display:inline-block;
+    color: #1b60a5;
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-size: 1.3em;
+}
+#contenedor1, #contenedor2, #contenedor3{
+    margin: 0.5em 0.5em 2em 0.5em;
+    padding: 0.5em;
+    font-family: 'Open Sans';
+    color: #2f3030;
+    border-radius: .25em;
+    font-size: 1.2em;
+    line-height: 1.25em;
+}
+.leer-mas-wrap {
+    text-align: left;
+}
+.leer-mas-state {
+    display: none;
+} 
+.leer-mas-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+.leer-mas-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #eeeeee;
+    font-size: 0.8em;
+    line-height: 2em;
+    border-radius: .25em;
+    background-color: #1660a7;
+    font-family: 'Open Sans';
+}
+.leer-mas-state:checked~.leer-mas-wrap .leer-mas-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}  
+.leer-mas-state~.leer-mas-trigger:before {
+    content: 'Ver más';
+} 
+.leer-mas-state:checked~.leer-mas-trigger:before {
+    content: 'Ver menos';
+}
+#listaPregunta{
+    margin: 0 0.5em;
+}
+#listaPregunta li{
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0.1em;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Gobold Thin';
+    letter-spacing:0.03em;
+}
+#listaPregunta li a{
+    display: block;
+    background-color: black;
+    height: 2.2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: white;
+}
+#listaPregunta #quiz a{
+    height: 2.5em;
+    line-height: 2.5em;
+    margin:0;
+    background: #1b60a5;
+    color: black;
+    font-family: 'Gobold';
+    font-size: 1.1em;
+}
+.fig-prod{
+    background-color: white;
+}
+#galeria{
+    position: relative;
+    width:100%;
+    padding: 0;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+    list-style: none;
+}
+#galeria li{
+    display: inline-block;
+    margin: 0.5em;
+	vertical-align: top;
+	width: 50%;
+	font-family: aleo;
+	font-size: 1em;
+	background:rgb(205, 205, 205);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+}
+#galeria li .mastexto{
+    display: none;
+    margin: 0;
+	font-size: 1em;
+	color: #0B0442;
+	font-family: "Aleo";
+}
+#galeria li:target{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin:0;
+	top: 0;
+	left: 0;
+    background: rgba(0,0,255,0.2);  
+}
+#galeria li:target > div{
+    z-index: 1;
+    width: 60%;
+    padding: 2em;
+    background:white;
+    text-align: left;
+    margin: auto;
+}
+#galeria li:target > div .fig-prod{
+   display: none;
+}
+#galeria li:target > div .mastexto{
+    display: block;
+    font-size: 1em;
+    font-family: "Aleo", sans-serif;
+}
+#galeria li:target > div a:first-child{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../imagenes/cerrar.png);
+    background-repeat: no-repeat;
+}
+.titulomodal{
+    display: block;
+    text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding: 0 0.5em;
+    border-bottom: 1px solid black;
+    color: ##1660a7; 
+}
+h4{
+    margin-top: 0.3em;
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 1.2em;
+    text-align:center;
+}
+#volumen, #resistencia, #nutricion{
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+p{
+    text-align:center;
+    font-family:  "Proxima Nova", Oxygen, sans-serif;
+    color: rgb(77, 77, 77);
+    margin-bottom: 0.5em;
+}
+.cont{
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+figure{
+    margin:auto;
+
+}
+.list-beneficios h4{
+    display: inline-block;
+    text-align: left;
+    width: 18em;
+}
+.list-beneficios{
+    padding-top: 1em;
+    list-style-type: square;
+    text-align: left;
+    font-size: 1.3em;
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    width: 60%;
+}
+.descripcion{
+    width: 18em;
+    color: #1660a7;
+    font-size: 1em;
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-weight: bold;
+}
+#combos{
+    margin-bottom: 0;
+}
+#asesoramiento{
+    margin-bottom: 0.5em;
+    color: #1660a7;
+}
+#asesorar{
+    background-image: url(../imagenes/consulta.png);
+    background-repeat: no-repeat;
+    width: 8em;
+    height: 8em;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+.texto-asesorar{
+    padding: 1em;
+}
+.texto-asesorar h3{
+    font-size: 1.5em;
+    color: rgb(77, 77, 77);
+    margin-bottom: 0.5em;
+}
+.texto-asesorar p{
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding: 0 1em;
+}
+form{
+    display: inline-block;
+	background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+    width: 85vw;
+    padding: 1em;
+}
+.form-estilo{
+    font-size: 1em;
+    color: #767676;
+    display: flex;
+    text-align: left;
+	font-family: "Chivo", inherit;
+    text-align:center;
+	padding-top: 1em;
+}
+.opcion{
+    font-size: 0.7em;
+    color: #767676;
+
+}
+label{
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #1660a7;
+    font-weight: bold;
+    margin-right: 0.6em;
+} 
+div input{
+	margin-top: 0;
+	width: 100%;
+	height: 2.5em;
+	border: 1px solid #767676;
+	border-radius: 4px;
+    background-color:white;
+}
+.botones{
+    text-align: right;
+}
+.enviar input{
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 7em;
+    height: 2.5em;
+    background-color: #ceff29;
+    color: rgb(77, 77, 77);  
+    font-weight: bold;
+    border-radius: 4px;
+    border: transparent;
+}
+.borrar input{
+    font-size: 1.2em;
+    margin-top: 1em;
+    width: 7em;
+    height: 2.5em;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    border-radius: 4px;
+    border: 1px solid #767676;
+}
+.container-footer{
+    background: black;
+}
+#gm{
+    text-align: center;
+    line-height: 0;
+    margin:auto;
+}
+iframe{
+    border: 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 2em auto;
+}
+#redes{
+    margin-top: -3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    background-color: white;
+}
+#redes li{
+    margin-top: 2em;
+	display: inline-block;
+	text-align: center;  
+}
+#redes li a{
+    margin: 1em;
+	display: inline-block;
+	background: url(../imagenes/redes.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+	width: 4em;
+    height: 4em;
+	text-indent: -9999px;
+}
+#redes li:nth-child(1) a{
+	background-position:0 0;
+}
+#redes li:nth-child(2) a{
+	background-position:-4em 0;
+}
+#redes li:nth-child(3) a{
+	background-position:-8em 0;
+}
+#redes li:nth-child(4) a{
+	background-position:-16em 0;
+}
+#redes li:nth-child(1) a:hover{
+	background-position:0 -4em;
+}
+#redes li:nth-child(2) a:hover{
+	background-position:-4em -4em;
+}
+#redes li:nth-child(3) a:hover{
+	background-position:-8em -4em;
+}
+#redes li:nth-child(4) a:hover{
+	background-position:-16em -4em;
+}
+.h3-footer{
+    padding-top: 1em;
+    font-size: 2em;
+}
+#colum1{
+    font-size: 1.3em;
+}
+#colum2{
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    color: white;
+}
+#colum3{
+    margin-top: 2.5em;
+}
+#datos{
+    font-size: 1.3em;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+#datos li{
+    line-height: 2em;
+}
+details summary{
+    padding: 0.8em;
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-size: 0.9em;
+    line-height: 1em;
+    background-color: black;
+    color: white;
+}
+details p{
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-size: 0.9em;
+    background-color: black;
+    color: white;
+}
+.yt{
+    background-color: white;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+#videos-yt figure{
+    text-align: center;
+    line-height: 0;
+    width: 80vw;
+    height: calc(80vw * 315/560);
+    max-width: 560px;
+    max-height: 315px;
+    margin:2em auto;
+    padding-bottom: 2.5em;   
+}
+.videos{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+.yt p{
+    margin-bottom: -2em;
+    font-size: 1.3em;
+    padding: 0 2em;
+}
+figcaption{
+    color: #1660a7;
+    font-size: 1.2em;
+    font-family: "Proxima Nova", Oxygen, sans-serif;
+    font-weight: bold;
+}
+@media screen and (min-width: 567px){
+    header{
+        width: 100%;
+        margin: auto;
+        height: 6em;
+        line-height: 6em;
+        text-align: center;
+    }
+    h3{
+        font-size: 1em;
+    }
+
+    .heroe{
+        max-width: 990px;
+    }
+    header #logo{
+        width: 10em;
+        padding-top:1.5em;
+    }
+    #hamburguesa li a{
+    margin-top: 1.75em;
+    }
+    #barra{
+        margin-top: 1.5em;
+        width:100%;
+        line-height: 5em;
+    }
+    #lista li h3{
+        font-family:"Proxima Nova", Oxygen, sans-serif;
+        font-size: 1.1em;
+    }
+    .leer-mas-target {
+        opacity: 1;
+        font-size: 1em;
+    }
+    .leer-mas-trigger {
+        display: none;
+    }
+    .tituloh3{
+        font-size:1.2em;
+    }
+    #lista{
+        width: 95vw;
+        margin: auto;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .bloque1{
+        max-width: 990px;
+    }
+    #contenedor1, #contenedor2, #contenedor3{
+        margin-left: 0;
+        margin-right:0;
+        width: 47.5vw;
+    }
+    #contenedor1 {
+        flex: 1;
+    }
+    #contenedor2 {
+        flex: 1;
+    }
+    #contenedor3 {
+        flex: 1;
+    }
+    #listaPregunta{
+        width: 100%;
+        margin:0;
+    }
+    #listaPregunta li{
+        font-size: 1.4em;
+        width: 45%;
+    }
+    #listaPregunta li a{
+        height: 4.5em;
+        line-height: 4.5em;
+    }
+    #listaPregunta #quiz a{
+        height: 4.5em;
+        line-height: 4.5em;
+        font-size: 1em;
+    }
+    #galeria li{
+        width: 40vw;;
+    }
+    .list-beneficios{
+        width: 50%;
+    }
+    .cont{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    form{
+        width: 75%;
+        padding: 3em 3em;
+    }
+    div input{
+        height: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    .container-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 2em;
+    }
+    .container-footer div{
+        margin: 0.5em;
+    }
+    #redes, .gm{
+        border-radius: 2em;
+    }
+    #datos{
+        list-style: none;
+        text-align: left;
+        margin-left: 2em;
+        padding: 0;
+    }
+    #datos li{
+        margin-bottom: 2.7em;
+        line-height: 1.5em;
+        margin-top: 1.5em;
+    }
+    #colum1{
+        flex: 2 30vw;  
+    }
+    #colum2{
+        flex: 1 30vw;
+    }
+    #colum3{
+        flex: 1 40vw; 
+    }
+    .h3-footer{
+        padding: 0;
+        line-height: 0;
+        font-size: 1.5em;
+    }
+    .yt p {
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+    }
+    #videos-yt figure{
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 990px){  
+    header{
+        width: 100%;
+        height: 6em;
+        line-height: 6em;
+        text-align:center;
+    }
+    .heroe{
+        max-width: 1920px;
+    }
+    #menu{
+        width: 85vw;
+        margin-left: 12rem;
+        margin-top: -4rem;
+    }
+    #barra{
+        overflow: visible;
+        margin:0;
+    }
+    #barra li{
+        border: 0;
+    }
+    #menu #barra li {
+        list-style: none;
+        width: 15%;
+        display: inline-block;
+        text-decoration: none;
+    }
+    #menu #barra li a {
+        display: block;
+        background-color: black;
+        height: 2.5em;
+        line-height: 2.5em;
+        color:white;
+        font-size: 0.9rem;
+        font-family: 'Lucida Sans';
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    nav #barra #botoncito {
+        margin-left: 2em;
+    }
+    nav #barra #botoncito a {
+        display: block;
+        background: yellow;
+        color: black;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+    #hamburguesa li {
+        display: none;
+    }
+    header #logo {
+        line-height: 1.5em;
+        margin-left:-75vw;
+    }
+    .bloque1{
+        max-width: 640px;
+    }
+    h3{
+        font-size: 1em;
+        text-align: center;
+    }
+    section{
+        text-align:center;  
+    }
+    #lista{
+        text-align:center;  
+        width: 90vw;
+    }
+    #contenedor1, #contenedor2, #contenedor3{
+        padding:0.5em;
+        margin:0;
+    }
+    #contenedor1 {
+        width: 30vw;
+    }
+    #contenedor2 {
+        width: 30vw;
+    }
+    #contenedor3 {
+        width: 30vw;
+
+    }
+    #listaPregunta{
+        width: 100%;
+        margin:0;
+    }
+    #listaPregunta li{
+        font-size: 1.4em;
+        width: 45%;
+    }
+    #listaPregunta li a{
+        height: 4.5em;
+        line-height: 4.5em;
+    }
+    #listaPregunta #quiz a{
+        height: 4.5em;
+        line-height: 4.5em;
+        font-size: 1em;
+    }
+    #listaPregunta li{
+        font-size: 1.1em;
+        width: 20%;
+    }
+    #listaPregunta li a {
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+    #listaPregunta #quiz a {
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+    #galeria li{
+        width: 30vw;;
+    }
+    .list-beneficios{
+        width: 40%;
+    }
+    .c1{
+        width: 90vw;
+        margin: auto;
+    }
+    #colum1{
+        flex: 1 30vw;  
+    }
+    #colum2{
+        flex: 1 30vw;
+    }
+    #colum3{
+        flex: 1 10vw;
+    }
+    .h3-footer{
+        display:none;
+    }
+    #redes{
+        width: 10em;
+        margin-top: 0;
+    }
+    #redes li{
+        margin: 0.5em;
+    }
+    #redes li a{
+        margin: 0.6em;
+    }
+    #datos{
+        text-align: left;
+    }
+     #nutricionista{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .texto-asesorar{
+        flex: 1 40vw;
+
+    }
+    aside{
+        width: 50%;
+        padding: 0;
+        margin-top: 3em;
+    }
+    aside form{
+        width: 400px;
+        padding: 0.5em 2em;
+    }
+    #videos-yt{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #video1{
+        flex: 1 50vw;
+    }
+    #video2{
+        flex: 1 50vw;
+    }   
+}
+
