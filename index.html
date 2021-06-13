@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Elsa Rodriguez - DWN2A</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="imagenes/logo.svg" alt="NRG logo"></a>
+        </div>
+        <nav id="menu">
+            <ul id="hamburguesa">
+                <li><a href="#menu">abrir</a></li>
+                <li><a href="#">cerrar</a></li>
+            </ul>
+            <ul id="barra">
+                <li><a href="#nosotros">Nosotros</a></li><!--
+                --><li><a href="#productos">Productos</a></li><!--
+                --><li><a href="#resultados">Resultados</a></li><!--
+                --><li><a href="#contacto">Contacto</a></li><!--
+                --><li id="botoncito"><a href="#asesoramiento">Asesorar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="heroe">
+            <figure>
+                <picture id="banner">
+                    <source media="(max-width:567px) and (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel:1.5)" srcset="imagenes/banner_celular_2x.jpg">
+                    <source media="(max-width:567px)" srcset="imagenes/banner_celular.jpg">
+                    <source media="(max-width:990px)" srcset="imagenes/banner_tablet.jpg">
+                    <img src="imagenes/banner_pc.jpg" alt="Nutricion deportiva">
+                </picture>
+            </figure>
+            <h1>Ajusta tu alimentación al ritmo de tus entrenamientos</h1>
+        </section>
+        <section>
+            <h2 id="nosotros">La Empresa</h2>
+                <ul id="lista">
+                    <li>
+                        <h3>Somos Calidad y Experiencia</h3>
+                        <div id="contenedor1">
+                            <div class="bloque1">
+                                <figure>
+                                    <picture>
+                                        <source media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel:1.5)" srcset="imagenes/staf_celular_2x.jpg">
+                                        <source media="(max-width:600px)" srcset="imagenes/staf_cel.jpg">
+                                        <source media="(max-width:800px)" srcset="imagenes/staf_tablet.jpg">
+                                        <img src="imagenes/staf.jpg" alt="La mejor nutricion para deportistas y amateurs con suplementos NRG">
+                                    </picture>
+                                </figure>
+                            </div>
+                                <input type="checkbox" class="leer-mas-state" id="post-1" />
+                                <p class="leer-mas-wrap">Somos una empresa alimenticia dedicada a la elaboración de suplementos nutricionales.
+                                Nos encanta lo que hacemos y tenemos 20 años en el mercado haciendo del mundo un lugar mas saludable y feliz.
+                                <span class="leer-mas-target"> Con experiencia en el campo de polvos batidos, hace 10 años incursionamos en la elaboración
+                                de suplementos nutricionales, que tienen como finalidad <strong>complementar la alimentación y
+                                aportar beneficios espefícos para mejorar el rendimiento, la recuperación y
+                                desarrollo físico.</strong></span></p>
+                                <label for="post-1" class="leer-mas-trigger"></label>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Somos productos de la Ciencia</h3>
+                        <div id="contenedor2">
+                            <div class="bloque1">
+                                <figure>
+                                    <picture id="imagen_bloque1">
+                                        <source media="(max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel:1.5)" srcset="imagenes/ciencia_celular_2x.jpg">
+                                        <source media="(max-width: 600px)" srcset="imagenes/ciencia_cel.jpg">
+                                        <source media="(max-width: 800px)" srcset="imagenes/ciencia_tablet.jpg">
+                                        <img src="imagenes/ciencia.jpg" alt="El equipo cientifico de NRG esta compuesto por destacados expertos en
+                                        los campos de nutricion, ciencia y salud">
+                                    </picture>
+                                </figure>
+                            </div>
+                                <input type="checkbox" class="leer-mas-state" id="post-2" />
+                                <p class="leer-mas-wrap">El desarrollo de nuestros productos se realiza junto a un equipo especializado de medicos,
+                                nutricionitas e ingenieros alimenticios que, sumado a nuestro conocimiento en sabores y texturas
+                                adquiridos a lo largo de estos años, nos permite brindar la más alta calidad en nutrición.<span class="leer-mas-target"> Nuestros productos son efectivos junto a un estilo de vida activo y saludable, porque son elaborados
+                                con los mejores ingredientes provenientes de diversas partes del mundo, usamos tecnologia de primer
+                                nivel y aportamos innovación a cada producto que creamos.</span></p>
+                                <label for="post-2" class="leer-mas-trigger"></label>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Somos productos Libre de Gluten</h3>
+                        <div id="contenedor3">
+                                <figure class="bloque1">
+                                    <picture>
+                                        <source media="(max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel:1.5)" srcset="imagenes/gluten_celular_2x.jpg">
+                                        <source media="(max-width: 600px)" srcset="imagenes/gluten_cel.jpg">
+                                        <source media="(max-width: 800px)" srcset="imagenes/gluten_tablet.jpg">
+                                        <img src="imagenes/gluten.jpg" alt="Productos NRG para personas con intolerancia al Gluten. Todos los suplementos son
+                                        sin TACC especialmente para celiacos">
+                                    </picture>
+                                </figure>
+                                <input type="checkbox" class="leer-mas-state" id="post-3" />
+                                <p class="leer-mas-wrap">Con el aumento de personas con intolerancia al glutem, decidimos <strong>desarrollar todos los productos libres
+                                de glutem</strong>, siguiendo con las normativas vigentes y aprobaciones de la <em>Dirección General de Higiene
+                                y Seguridad Alimentaria del Gobierno de la Ciudad de Buenos Aires</em>para su venta.<span class="leer-mas-target"> Nuestro objetivo
+                                es buscar la más alta calidad a corto, mediano y largo plazo en todas nuestras actividades
+                                y de forma sostenida. De la misma forma con nuestros clientes, empleados, proveedores y socios.</span></p>
+                                <label for="post-3" class="leer-mas-trigger"></label>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+        <section>
+            <h2 id="productos">Productos</h2>
+                <ul id="listaPregunta">
+                    <li id="quiz"> <a href="#nutricionista">¿Cuál es tu objetivo?</a></li>
+                    <li id="answer1"> <a href="#volumen">Aumentar Volumen</a></li>
+                    <li id="answer2"> <a href="#resistencia">Ganar Resistencia</a></li>
+                    <li id="answer3"> <a href="#nutricion">Mejorar Nutrición</a></li>
+                </ul>
+                <article>
+                <ul id="galeria">                                         
+                    <li id="prod1"><div><a href="#"></a> 
+                        <figure class="fig-prod">
+                                <a href="#prod1"><img src="imagenes/prod1.jpg" alt="Suplemento nutricional y batido proteico Protein Whey" class="fotin"/></a>
+                        </figure>
+                        <h3 class="titulomodal">Whey Protein</h3>   
+                            <h4>Presentación:</h4>
+                            <p>480 gr, 1 kg, 2 kg y 4 kg</p>
+                            <h4>Sabores:</h4>
+                            <p>Chocolate, Vainilla y Frutilla</p>
+                            <div  class="mastexto">
+                            <h4>¿Qué es Whey Protein?</h4>
+                            <p>Es un suplemento elaborado a base de mejor proteína de suero lácteo. Producto apto para
+                            celíacos con certificación Sin Tacc. Es ideal para todos aquellos que requieren de un aporte
+                            extra de proteínas en su dieta habitual. Su excelente aporte de aminoácidos favorece el
+                            desarrollo de masa muscular y también mejora la capacidad de recuperación de los
+                            músculos luego del entrenamiento.</p>
+                            </div>
+                        </div>   
+                    </li>                                           
+                    <li id="prod2"><div><a href="#"></a>
+                        <figure class="fig-prod">
+                                <a href="#prod2"><img src="imagenes/prod2.jpg" alt="Suplemento nutricional vegano y batido proteico Vegan Protein" class="fotin"/></a>
+                        </figure>
+                        <h3 class="titulomodal">Vegan Protein</h3> 
+                            <h4>Presentación:</h4>
+                            <p>1 kg y 2 kg</p>
+                            <h4>Sabores:</h4>
+                            <p>Chocolate y Almendras</p>
+                            <div  class="mastexto">
+                            <h4>¿Qué es Vegan Protein?</h4>
+                            <p>Es un suplemento elaborado a base de proteína de soja, con excelente sabor a almendras y
+                            libre de gluten (Sin Tacc). Es una proteína isolada de rápida absorción y cada scoop aporta 34
+                            gramos de proteína. Podés prepararlo con leche de soja, de almendras o la que más te guste. NRG certifica que este producto está elaborado con granos de soja no
+                            modificados genéticamente.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="prod3"><div><a href="#"></a>
+                        <figure class="fig-prod">
+                                <a href="#prod3"><img src="imagenes/prod3.jpg" alt="Aumenta tus niveles de energia y vitalidad con Amino Energy" class="fotin"/></a>
+                        </figure>
+                        <h3 class="titulomodal">Amino Energy</h3>  
+                            <h4>Presentación:</h4>
+                            <p>1 kg y 2 kg</p>
+                            <h4>Sabores:</h4>
+                            <p>Vainilla, chocolate y frutilla</p> 
+                            <div  class="mastexto">
+                            <h4>¿Qué es Amino Energy?</h4>
+                            <p>Es un suplemento a base de aminoácidos, libre de gluten (sin tacc). Es un producto ideal para
+                            todas aquellas personas que buscan seguir una dieta sana, de control/pérdida de peso o
+                            para deportistas que requieren de un aporte extra de proteínas. Los aminoácidos
+                            contribuyen al desarrollo de la masa muscular, generan fuerza y energía, ideal para
+                            suplementar entrenamientos intensos.</p>
+                            </div>
+                        </div>
+                    </li>                                                 
+                    <li id="prod4"><div><a href="#"></a>
+                        <figure class="fig-prod">
+                                <a href="#prod4"><img src="imagenes/prod4.jpg" alt="Maximizar el rendimiento deportivo con creatina" class="fotin"/></a>
+                        </figure>
+                        <h3 class="titulomodal">Creatine</h3>
+                            <h4>Presentación:</h4>
+                            <p>150 gr, 300 gr y 500 gr</p>
+                            <h4>Sabores:</h4>
+                            <p>Neutro</p>
+                            <div  class="mastexto">
+                            <h4>¿Qué es Creatine?</h4>
+                            <p>Es un suplemento dietario a base de Creatina 100% pura que provee energía para ejercicios
+                            de alta intensidad y contribuye al crecimiento de la masa muscular. Apto para celíacos (sin
+                            tacc).La Creatina se almacena en el músculo como fosfocreatina, sirve como un aporte
+                            instantáneo de energía para ejercicios de alta intensidad y breve duración, retarda la
+                            formación de ácido láctico.</p>
+                            </div>
+                        </div>
+                    </li>                                                  
+                    <li id="prod5"><div><a href="#"></a>
+                        <figure class="fig-prod">
+                                <a href="#prod5"><img src="imagenes/prod5.jpg" alt="Multivitamico y multimineral en tabletas NRG a base de vitaminas y minerales para reforzar las defensas" class="fotin"/></a>
+                        </figure>
+                        <h3 class="titulomodal">Multi Vitamin</h3>
+                            <h4>Presentación:</h4>
+                            <p>Pote de 90 gr(60 comprimidos)</p>
+                            <h4>Sabores:</h4>
+                            <p>Neutro</p>
+                            <div  class="mastexto">
+                            <h4>¿Qué es Multivitamin?</h4>
+                            <p>Suplemento dietario a base de vitaminas, minerales y ginseng. Libre de gluten (sin tacc).
+                            Fórmula ideada para proveer una combinación equilibrada de Vitaminas lipo e hidrosolubles
+                            y Minerales con Ginseng. Contiene vitamina A, complejo vitamínico B, ácido fólico, vitamina C,
+                            vitamina E y minerales como el magnesio, calcio, zinc y Ginseng.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="prod6"><div><a href="#"></a>
+                        <figure class="fig-prod">
+                                <a href="#prod6"><img src="imagenes/prod6.jpg" alt="Colageno hidrolizado para huesos, articulaciones y piel" class="fotin"/></a>
+                        </figure>
+                        <h3 class="titulomodal">Colageno</h3> 
+                            <h4 class="texto">Presentación:</h4>
+                            <p>250 gr</p>
+                            <h4>Sabores:</h4>
+                            <p>Vainilla y frutilla</p>
+                            <div  class="mastexto">
+                            <h4>¿Qué es Colageno?</h4>
+                            <p>Es una combinación de colágeno hidrolizado y Vitamina C, que contribuye a su formación. Se
+                            reconoce al colágeno como la proteína que forma el tejido conectivo y que da la elasticidad y
+                            regeneración de la piel, huesos y articulaciones. De gran utilidad en personas que sufren
+                            deterioro de los tejidos bien sea debido a la edad (en general a partir de los 40 años).</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </article>
+        </section>
+        <section>
+            <h2 id="combos">Combos</h2>
+                <article class="c1">
+                    <h3 id="volumen">Combo Aumentar Volumen</h3>
+                    <div class="cont">
+                        <figure>
+                            <picture>
+                                <img src="imagenes/combo1.jpg" alt="Combo para aumentar volumen, fuerza y masa muscular" width="210" height="200">
+                            </picture>
+                            <figcaption class="descripcion">Whey Protein + Creatine + Carbohidrato</figcaption>
+                        </figure>
+                        <div class="list-beneficios">
+                            <h4>Beneficios:</h4>
+                            <ul>
+                                <li>Aumenta la síntesis de la proteína muscular.</li>
+                                <li>Acelera los procesos de recuperación post ejercicio.</li>
+                                <li>Ayuda al aumento de masa muscular.</li>
+                                <li>Aumento de fuerza y potencia.</li>
+                                <li>Aumenta el anabolismo muscular.</li>
+                                <li>Mejor rendimiento y mayor resistencia.</li>
+                                <li>Contribuye a conciliar el sueño reparador.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="c1">
+                    <h3 id="resistencia">Combo Ganar Resistencia</h3>
+                    <div class="cont">
+                        <figure>
+                            <picture>
+                                <img src="imagenes/combo2.jpg" alt="Combo para aumentar energía y vitalidad" width="210" height="200">
+                            </picture>
+                            <figcaption class="descripcion">Whey Protein + Amino Energy</figcaption>
+                        </figure>
+                        <div class="list-beneficios">
+                            <h4>Beneficios:</h4>
+                            <ul>
+                                <li>Mejora los niveles de energía.</li>
+                                <li>Acelera los procesos de recuperación post ejercicio.</li>
+                                <li>Aumento de fuerza y potencia.</li>
+                                <li>Ayuda al aumento de masa muscular.</li>
+                                <li>Aumenta el anabolismo muscular.</li>
+                                <li>Mejor rendimiento y mayor resistencia.</li>
+                                <li>Asimilación rápida.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="c1">
+                    <h3 id="nutricion">Combo Mejorar Nutrición</h3>
+                    <div class="cont">
+                        <figure>
+                            <picture>
+                                <img src="imagenes/combo3.jpg" alt="Combo nutricional con vitaminas, minerales, calcio y colageno" width="210" height="200">
+                            </picture>
+                            <figcaption class="descripcion">Multivitamin + Calcio + Colageno</figcaption>
+                        </figure>
+                        <div class="list-beneficios">
+                            <h4>Beneficios:</h4>
+                            <ul>
+                                <li>Compensa las necesidades diarias de nutrientes.</li>
+                                <li>Buena fuente de minerales y antioxidantes.</li>
+                                <li>Apoya el metabolismo energetico.</li>
+                                <li>Ayuda a conservar la salud de los huesos</li>
+                                <li>Provee acción antioxidante</li>
+                                <li>Ayuda a reducir el cansancio y la fatiga</li>
+                                <li>Reduce el riesgo de osteoporosis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+        </section>
+    </main>
+    <article class="yt">
+        <h2 id="resultados">Resultados</h2>
+        <p>Ya son miles los clientes que orgullosamente recomiendan los productos NRG a familiares y amigos. Ellos hacen de este mundo, un lugar más saludable y feliz. Te invitamos a conocer algunas historias de éxito.</p>
+            <div id="videos-yt">
+                <figure id="video1">
+                    <iframe src="https://www.youtube.com/embed/mzwax1QmMXY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videos" allowfullscreen></iframe>
+                    <figcaption>Claudia Castro - Rosario, Argentina</figcaption>
+                </figure>
+                <figure id="video2">
+                    <iframe src="https://www.youtube.com/embed/qljL8w9dZJ4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videos" allowfullscreen></iframe>
+                    <figcaption>Ezequiel Borja - CABA, Argentina</figcaption>
+                </figure>
+            </div>
+    </article> 
+    <section id="nutricionista">
+        <div class="texto-asesorar">
+            <h2 id="asesoramiento">¡Descubri tu mejor versión!</h2>
+                <h3>Consulta nutricional gratuita</h3>
+                <span id="asesorar"></span>
+                <p>Por consultas nutricionales completa el siguiente formulario o envía un email a nutricion@nrg.com</p>
+                <p>(por favor completar todos los campos requeridos).</p>
+                <p>Estaremos respondiendo tus inquietudes de manera gratuita en un lapso de 24 hs.</p>
+        </div>
+        <aside>
+            <form action="enviar_formulario.php" method="post" enctype="multipart/form-data">
+                <div class="form-estilo">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" autocomplete="off" required placeholder="Ingresa tu nombre"/>
+                </div>
+                <div class="form-estilo">
+                <label>Peso:</label>
+                <input type="text" name="peso" required placeholder="Kg"/>
+                </div>
+                <div class="form-estilo">
+                <label>Estatura:</label>
+                <input type="text" name="altura" required placeholder="170"/>
+                </div>  
+                <div class="form-estilo">
+                <label>Objetivo:</label>
+                <input type="checkbox" name="objetivo" value="volumen" id="v"><label class="opcion" for="v">Más volumen</label>
+                <input type="checkbox" name="objetivo" value="resistencia" id="r"><label class="opcion" for="r">Más resistencia</label>
+                <input type="checkbox" name="objetivo" value="nutricion" id="n"><label class="opcion" for="n">Mejorar nutrición</label>
+                </div>
+                <div class="form-estilo">
+                <label>Mail:</label>
+                <input type="email" name="email" autocomplete="off" required placeholder="Ingresa tu mail"/>
+                </div>
+                <div class="botones">
+                <span class="borrar"><input type="reset" value="Borrar"></span>
+                <span class="enviar"><input type="submit" value="Enviar"></span>
+                </div>
+            </form>
+        </aside>
+    </section>
+    <footer>
+        <h2 id="contacto">Contacto</h2>
+        <div class="container-footer">
+            <div id="colum1">
+                <h3 class="h3-footer">Ubicación</h3>
+                <figure id="gm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105159.95950934589!2d-58.53996354179686!3d-34.547257099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7f3f25246af%3A0x8f7f6599d81b2a0b!2sNUTRISHOP%20NU%C3%91EZ%20Nutricion%20%26%20Fitness%20%2F%20Suplementos%20Deportivos!5e0!3m2!1ses-419!2sar!4v1623347946537!5m2!1ses-419!2sar" height="450" class="gm" allowfullscreen="" loading="lazy"></iframe>
+                </figure>
+            </div>
+            <div id="colum2">
+                <h3 class="h3-footer">Información</h3>
+                <ul id="datos">
+                    <li>Teléfono: (11) 4690-4000</li>
+                    <li>Domicilio: Av. Cabildo 1346, CABA</li>
+                    <li>Mail: nrg@nrg.com.ar</li>
+                    <li>Horario de Atención: 9:00 a 18:00 hs</li>
+                </ul>
+            </div>
+            <div id="colum3">
+                <h3 class="h3-footer">Redes sociales</h3>
+                <ul id="redes">
+                    <li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="http://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="http://www.pinterest.com" target="_blank">Pinterest</a></li>
+                    <li><a href="http://www.youtube.com" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <details>
+            <summary>Copyright © 2021 NRG</summary>
+            <p>Elsa Rodríguez | DWN2A | Docente: Omar Toyos</p>
+        </details>
+    </footer> 
+</body>
+</html>
